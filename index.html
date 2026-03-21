@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Currículo</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg, #355c7d, #6c5b7b);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card { 
+          background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    color: silver;
+}
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        ul {
+    list-style-position: inside;
+    padding: 0;
+}
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>Marta Laura Alves de Oliveira</h1>
+
+    <img src="foto.jpg">
+
+    <p>Professora e futura desenvolvedora</p>
+
+    <h2>Curiosidades</h2>
+    <p>Estou em transição de carreira para a área de tecnologia.</p>
+
+    <h2>Habilidades</h2>
+    <ul>
+        <li>HTML básico</li>
+        <li>CSS básico</li>
+        <li>Vontade de aprender</li>
+        <li>Organização, comunicação</li>
+    </ul>
+
+    <h2>Objetivo</h2>
+    <p>Conseguir minha primeira oportunidade na área de tecnologia.</p>
+
+    <!-- BOTÃO ÚNICO -->
+    <button onclick="mostrarContato()">Fale comigo</button>
+
+    <!-- CONTATO -->
+    <div id="contato" style="display:none; margin-top: 15px;">
+        <p>Entre em contato:</p>
+
+        <a href="mail:lauramarta007@gmail.com">📧 E-mail</a><br><br>
+
+        <a href="tel:+5588981623196">📞 Telefone</a>
+    </div>
+
+</div>
+
+<script>
+function mostrarContato() {
+    var contato = document.getElementById("contato");
+
+    if (contato.style.display === "none") {
+        contato.style.display = "block";
+    } else {
+        contato.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
